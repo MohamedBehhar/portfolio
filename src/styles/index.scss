@@ -1,0 +1,84 @@
+
+@import "./navbar";
+@import "./sidebar";
+@import "./about";
+@import "./home";
+@import "./social-icon";
+@import "./works";
+@import "./contact";
+@import "./variables";
+
+html{
+	scroll-behavior: smooth;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	color: $White;
+}
+
+body{
+	background-color: $Navy;
+}
+
+p, a {
+	font-family: $Ftitilium;
+	letter-spacing: 1px;
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+@media (min-width: 1200px) {
+	.container{
+		width: 1200px;
+		padding:  0 2rem;
+		// background-color: aliceblue;
+	}
+}
+@media (max-width: 1200px) {
+	.container{
+		width: 100%;
+		padding:  0 4rem;
+	}
+}
+@media (max-width: 768px) {
+	.container{
+		padding:  0 2rem;
+	}
+}
+@media (max-width: 568px) {
+	.container{
+		padding:  0 1rem;
+	}
+}
+
+.section-title{
+	margin-bottom: $Small-margin;
+	display: flex;
+	align-items: center;
+	h1{
+		font-size: 4rem;
+		margin-right: 1rem;
+		color: $Lightest-Slate;
+	}
+	.line{
+		width: 100px;
+		height: .2px;
+		background-color: $Lightest-Slate;
+	}
+}
+
+@media (max-width: 768px) {
+	.section-title{
+		h1{
+			font-size: 2rem;
+		}
+	}
+}

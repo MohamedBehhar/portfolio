@@ -1,0 +1,56 @@
+.sidebar{
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.sidebar{
+		background-color: $Navy;
+		height: 100vh;
+		width: 100vw;
+		z-index: 100;
+		position: fixed;
+		top: -100%;
+		left: 0;
+		opacity: 0;
+		animation: pulse;
+		animation-fill-mode: backwards;
+		.close-icon{
+			font-size: 2rem;
+			position: absolute;
+			top: 1.2rem;
+			right: 1.5rem;
+			color: $White;
+			cursor: pointer;
+		}
+		.side-links{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: absolute;
+			top: 5rem;
+			width: 100%;
+			.link{
+				text-transform: capitalize;
+				margin-bottom: $Medium-margin;
+				letter-spacing: 1px;
+			}
+		}
+	}
+	.show-sidebar{
+		display: block;
+		top: 0;
+		opacity: 1;
+		animation: pulse 250ms ;		
+	}
+	@keyframes pulse {
+		0% {
+			top: -100%;
+			opacity: 0;
+		}
+		100% {
+			top: 0%;
+			opacity: 1;
+		}
+	  }
+	
+}

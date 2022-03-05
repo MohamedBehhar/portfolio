@@ -1,0 +1,121 @@
+@import "./variables";
+
+
+nav{
+	position: sticky;
+	top: 0;
+	background-color: $Navy;
+	z-index: 1;
+	.navbar{
+		display: flex;
+		height: 70px;
+		align-items: center;
+		justify-content: space-between;
+		.logo{
+			flex-basis: 40%;
+			color: $White;
+			position: relative;
+			line-height: 10%;
+			letter-spacing: 2px;
+			
+			&::after{
+				content: '';
+				height: 2px;
+				background-color: $Green;
+				position: absolute;
+				top: -3px;
+				left: 0;
+				width: 100%;
+				transition: all ease-in-out 250ms;
+			}
+			&::before{
+				content: '';
+				height: 2px;
+				background-color: $Green;
+				position: absolute;
+				bottom: -3px;
+				left: 0;
+				width: 100%;
+				transition: all ease-in-out 250ms;
+			}
+			&:hover::before{
+				left: -20px;
+				bottom: 15px;
+				width: 80%;
+				transform: rotate(90deg) ;
+			}
+			&:hover::after{
+				width: 80%;
+				left: 26px;
+				top: 12px;
+				transform: rotate(90deg) ;
+			}
+		}
+		.nav-links{
+			flex-basis: 40%;
+			justify-self: flex-end;
+			display: flex;
+			justify-content: space-between;
+			text-transform: capitalize;
+			.link{
+				font-size: 1rem;
+				font-family: $Ftitilium;
+				font-weight: 300;
+				color: $White;
+				position: relative;
+				letter-spacing: 2px;
+				&::after,
+				&::before
+				{
+					content: '';
+					background-color: $Green;
+					position: absolute;
+					bottom: -8px;
+					left: 0;
+					height: 2px;
+					width: 0;
+					opacity: 0;
+					transition: all ease-in-out 250ms;
+				}
+				&::before{
+					top: -8px;
+					left: 0;
+				}
+				&:hover::before{
+					width:50%;
+					opacity: 1;
+	
+				}
+				&:hover::after{
+					width: 100%;
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.burger{
+		display: none;
+	}
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+	nav{
+		.navbar{
+			.link{
+				display: none;
+			}
+			.burger{
+				display: block;
+				font-size: 2rem;
+				cursor: pointer;
+				transition: all ease-in-out 250ms;
+				color: $White;
+			}
+		}
+	}
+}
