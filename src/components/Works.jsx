@@ -1,5 +1,7 @@
 import React from 'react'
 import {works} from '../data'
+import {BsGithub} from 'react-icons/bs'
+import {HiOutlineExternalLink} from 'react-icons/hi'
 
 const Works = () => {
   return (
@@ -11,15 +13,22 @@ const Works = () => {
         </section>
         <div className="work-flex">
         {works.map((work) =>{
-          const {id, title, description, url, img} = work;
+          const {id, title, description, url, img, github} = work;
           return(
             <div className="work" key={id}>
               <div className="img-container">
                 <img src={img} alt="" />
               </div>
+              <div className="work-text">
               <h3>{title}</h3>
               <p>{description}</p>
-              <a href={url}>Click me</a>
+              <a href={url} target="_blank" rel="noreferrer">
+                <HiOutlineExternalLink/>
+              </a>
+              <a href={github} target="_blank" rel="noreferrer">
+                <BsGithub />
+              </a>
+              </div>
             </div>
           )
         })}
