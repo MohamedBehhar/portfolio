@@ -2,11 +2,12 @@
 	height: 100vh;
 	display: flex;
 	align-items: center;
+	margin-bottom: 2rem;
 	.img-container{
 		flex-basis: 30%;
 		position: relative;
 		.home-picture{
-			padding: 1rem;
+			padding: .5rem;
 			max-width: 100%;
 			border: 1px solid $Green;
 		}
@@ -21,19 +22,19 @@
 		}
 		.name{
 			color: $White;
-			font-size: 4rem;
+			font-size: 3rem;
 			margin-bottom: $Small-margin;
 		}
 		.title{
-			color: $Slate;
-			font-size: 3rem;
+			color: $blue;
+			font-size: 2.5rem;
 			margin-bottom: $Small-margin;
 		}
 		.school{
 			color: $Green;
 		}
 		p{
-			color: $Light-Slate;
+			color: $Lightest-Slate;
 			font-size: 1.2rem;
 			margin-bottom: $Small-margin;
 		}
@@ -42,12 +43,10 @@
 
 @media (max-width: 900px) {
 	.home-center{
-		height: 100vh;
-		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		.img-container{
-			padding-top: 3rem;
+			padding-top: 2rem;
 			margin-bottom: $Small-margin;
 			.home-picture{
 				max-width: 40%;
@@ -56,28 +55,17 @@
 		.description{
 			flex-basis: unset;
 			padding: unset;
-			.greeting{
-				color: $Green;
-				font-family: $Ftitilium;
-				margin-bottom: $Small-margin;
-			}
 			.name{
-				color: $White;
 				font-size: 2rem;
-				margin-bottom: $Small-margin;
+				margin-bottom: unset;
 			}
 			.title{
-				color: $Slate;
 				font-size: 1.5rem;
-				margin-bottom: $Small-margin;
+				margin-bottom: 1rem;
 			}
-			.school{
-				color: $Green;
-			}
+
 			p{
-				color: $Light-Slate;
 				font-size: 1rem;
-				margin-bottom: $Small-margin;
 			}
 		}
 	}

@@ -11,7 +11,7 @@ const Works = () => {
         <h1>My Works</h1>
         <div className="line"></div>
         </section>
-        <div className="work-flex">
+        <div className="work-grid">
         {works.map((work) =>{
           const {id, title, description, url, img, github} = work;
           return(
@@ -20,14 +20,14 @@ const Works = () => {
                 <img src={img} alt="" />
               </div>
               <div className="work-text">
-              <h3>{title}</h3>
-              <p>{description}</p>
-              <a href={url} target="_blank" rel="noreferrer">
-                <HiOutlineExternalLink/>
-              </a>
-              <a href={github} target="_blank" rel="noreferrer">
-                <BsGithub />
-              </a>
+                <h3>{title}</h3>
+                <p>{description}</p>
+                <a href={url} target="_blank" rel="noreferrer" className="ex-link">
+                  <HiOutlineExternalLink/>
+                </a>
+                <a href={github} target="_blank" rel="noreferrer" className="github">
+                  <BsGithub />
+                </a>
               </div>
             </div>
           )

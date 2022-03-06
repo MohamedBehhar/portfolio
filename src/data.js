@@ -24,37 +24,37 @@ export const technologies = [
 	{
 		id: 1,
 		text: 'Html',
-		icon: <ImHtmlFive />,
+		icon: <ImHtmlFive className='tech-icon'/>,
 	},
 	{
 		id: 2,
 		text: 'Css',
-		icon: <FaCss3Alt />,
+		icon: <FaCss3Alt className='tech-icon'/>,
 	},
 	{
 		id: 3,
 		text: 'JavaScript',
-		icon: <SiJavascript />,
+		icon: <SiJavascript className='tech-icon'/>,
 	},
 	{
 		id: 4,
 		text: 'React',
-		icon: <FaReact />,
+		icon: <FaReact className='tech-icon'/>,
 	},
 	{
 		id: 5,
 		text: 'Tailwind',
-		icon: <SiTailwindcss />,
+		icon: <SiTailwindcss className='tech-icon'/>,
 	},
 	{
 		id: 6,
 		text: 'Bootstrap',
-		icon: <FaBootstrap />,
+		icon: <FaBootstrap className='tech-icon'/>,
 	},
 	{
 		id: 7,
 		text: 'Sass',
-		icon: <SiSass />,
+		icon: <SiSass  className='tech-icon'/>,
 	},
 ]
 
@@ -85,7 +85,7 @@ export const works = [
 	},
 	{
 		id: 4,
-		title: 'Landing page with alternating feature blocks',
+		title: 'Landing page with feature blocks',
 		description: 'Responsive landing page build with Html and Css',
 		url: 'https://mohamedbehhar.github.io/Landing-page-with-alternating-feature-blocks/',
 		github: 'https://github.com/MohamedBehhar/Landing-page-with-alternating-feature-blocks',

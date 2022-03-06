@@ -16,7 +16,7 @@ export const AppProvider = ({children}) => {
 
 	return (
 		<AppContext.Provider
-		value = {{openSideBar, closeSideBar, isSidebarOpen}}
+		value = {{openSideBar, closeSideBar, isSidebarOpen, SetIsSidebarOpen}}
 		>
 		{children}
 		</AppContext.Provider>

@@ -1,4 +1,59 @@
 .contact{
-	height: 100vh;
-	background-color: cadetblue;
+	margin-bottom: 4rem;
+	.form-container{
+		display: flex;
+		justify-content: center;
+		form{
+			display: flex;
+			flex-direction: column;
+			width: 70%;
+			max-width: 800px;
+			font-family: $Ftitilium;
+			font-size: 1rem;
+			p{
+				text-align: center;
+				margin-bottom: 1rem;
+				font-size: 1.2rem;
+			}
+			input,
+			textarea{
+				border: 0;
+				margin: 1rem 0;
+				padding: 1.5rem;
+				outline: none;
+				background: $White;
+				border-radius: 10px;
+				color: $Navy;
+			}
+			button{
+				background: transparent;
+				outline: none;
+				border: 1px solid $Green;
+				border-radius: 10px;
+				padding: .7rem;
+				cursor: pointer;
+				font-family: $Ftitilium;
+				font-size: 1rem;
+				transform: scale(1);
+				transition: transform 300ms ease-in-out;
+				width: 20%;
+				align-self: center;
+				font
+				&:hover{
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.contact{
+		.form-container{
+			form{
+				width: 100%;
+				max-width: unset;
+			}
+		}
+	}
 }
