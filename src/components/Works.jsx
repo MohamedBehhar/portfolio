@@ -1,7 +1,7 @@
 import React from 'react'
 import {works} from '../data'
 import {BsGithub} from 'react-icons/bs'
-import {HiOutlineExternalLink} from 'react-icons/hi'
+import {FaExternalLinkSquareAlt} from 'react-icons/fa'
 
 const Works = () => {
   return (
@@ -22,11 +22,11 @@ const Works = () => {
               <div className="work-text">
                 <h3>{title}</h3>
                 <p>{description}</p>
-                <a href={url} target="_blank" rel="noreferrer" className="ex-link">
-                  <HiOutlineExternalLink/>
+                <a href={url} target="_blank" rel="noreferrer" >
+                  <FaExternalLinkSquareAlt className="link-icon"/>
                 </a>
-                <a href={github} target="_blank" rel="noreferrer" className="github">
-                  <BsGithub />
+                <a href={github} target="_blank" rel="noreferrer" >
+                  <BsGithub className="link-icon"/>
                 </a>
               </div>
             </div>

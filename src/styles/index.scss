@@ -30,8 +30,14 @@ p, a {
 	font-family: $Ftitilium;
 	letter-spacing: 1px;
 	color: $Lightest-Slate;
+	font-size: 1.1rem;
 }
 
+@media (max-width: 768px) {
+	p{
+		font-size: 1rem;
+	}
+}
 .container{
 	width: 80%;
 	margin: 0 auto;
@@ -86,16 +92,35 @@ p, a {
 	}
 }
 
+// styling the footer 
+
 .footer{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 14px;
-	.heart{
-		margin: 0 7px;
-		fill: $Green;
+	.footer-text{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.heart{
+			margin: 0 7px;
+			fill: $Green;
+		}
+		p{
+			color: $Green;
+		}
 	}
-	p{
-		color: $Green;
+	.footer-icons{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.footer-icon{
+			margin-right: .5rem;
+			fill: $Green;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.footer-icons{
+		display: none;
+		
 	}
 }

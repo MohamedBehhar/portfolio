@@ -1,14 +1,11 @@
 .works{
-	// height: 100vh;
 	.work-grid{
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 		gap: 3rem;
-		padding-bottom: 5rem;
+		padding-bottom: 4rem;
 		justify-items: center;
-
 		.work{
-			// max-width: 300px;
 			position: relative;
 			overflow: hidden;
 			border-radius: 15px;
@@ -55,9 +52,13 @@
 						transition: transform 450ms ease-in-out;
 					}
 				}
-				a{
+				p{
+					font-size: 1rem;
+				}
+				.link-icon{
 					margin-right: .7rem;
 					font-size: 1.2rem;
+					fill: $Green;
 				}
 			}
 			&:hover {
@@ -72,3 +73,4 @@
 		}
 	}
 }
+
