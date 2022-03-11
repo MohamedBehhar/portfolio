@@ -24,6 +24,7 @@
 				border-radius: 10px;
 				color: $Navy;
 			}
+
 			button{
 				background: transparent;
 				outline: none;
@@ -37,11 +38,13 @@
 				transition: transform 300ms ease-in-out;
 				width: 20%;
 				align-self: center;
+				position: relativ;
 				font
 				&:hover{
 					transform: scale(1.05);
 				}
 			}
+			
 		}
 	}
 }
@@ -52,6 +55,12 @@
 			form{
 				width: 100%;
 				max-width: unset;
+				input,
+				textarea{
+					border: 0;
+					margin: .5rem 0;
+					padding: 1rem;
+				}
 			}
 		}
 	}

@@ -104,6 +104,7 @@ p, a {
 			fill: $Green;
 		}
 		p{
+			fill: $Light-Navy;
 			color: $Green;
 		}
 	}
@@ -121,6 +122,18 @@ p, a {
 @media (min-width: 768px) {
 	.footer-icons{
 		display: none;
-		
 	}
+}
+
+.reveal{
+	position: relative;
+	transform: translateX(10px);
+	opacity: 0;
+	transition: all ease-in-out 800ms;
+}
+
+.reveal.active{
+	transform: translateY(0px);
+	opacity: 1;
+
 }

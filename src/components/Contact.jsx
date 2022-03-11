@@ -29,8 +29,8 @@ const Contact = () => {
           <input type="text" id='name' name='name' placeholder='Name'  required/>
           <input type="text" id='subject' name='subject' placeholder='Subject'  required/>
           <input type="email" id='email' name='email' placeholder='Email'  required/>
-          <textarea id='message' rows='4' name='message' placeholder='How can i help you!'  required></textarea>
-          <button className="submit" type='submit'>Send</button>
+          <textarea id='message' rows='8' name='message' placeholder='How can i help you!'  required></textarea>
+            <button className="submit" type='submit'>Send</button>
       </form>
       </div>
     </div>

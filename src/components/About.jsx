@@ -2,8 +2,8 @@ import React from 'react'
 import {technologies} from '../data'
 const About = () => {
   return (
-	<div className='about' id='about'>
-    <div className='about-center container'>
+	<div className='about ' id='about'>
+    <div className='about-center container reveal'>
       <section className="section-title">
         <h1>About</h1>
         <div className="line"></div>

@@ -6,7 +6,7 @@ import {FaExternalLinkSquareAlt} from 'react-icons/fa'
 const Works = () => {
   return (
 	<div className='works' id='works'>
-    <div className="works-center container">
+    <div className="works-center container reveal">
         <section className="section-title">
         <h1>My Works</h1>
         <div className="line"></div>

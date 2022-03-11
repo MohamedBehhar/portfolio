@@ -1,6 +1,5 @@
 import React from 'react'
 import {FaHeartbeat} from 'react-icons/fa'
-import Socialicon from '../components/Social-icon';
 import {BsLinkedin, BsGithub} from 'react-icons/bs'
 import {MdEmail} from 'react-icons/md'
 

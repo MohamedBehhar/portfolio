@@ -1,20 +1,25 @@
 import { SiJavascript, SiSass, SiTailwindcss,  } from 'react-icons/si'
-import { FaReact, FaCss3Alt, FaBootstrap  } from 'react-icons/fa'
+import { FaReact, FaCss3Alt, FaBootstrap, FaWordpress  } from 'react-icons/fa'
 import { ImHtmlFive } from 'react-icons/im'
 
 export const links  = [
 	{
 		id:1,
+		text:'home',
+		url:'#home',
+	},
+	{
+		id:2,
 		text:'about',
 		url:'#about',
 	},
 	{
-		id:2,
+		id:3,
 		text:'works',
 		url:'#works',
 	},
 	{
-		id:3,
+		id:4,
 		text:'contact',
 		url:'#contact',
 	},
@@ -55,6 +60,11 @@ export const technologies = [
 		id: 7,
 		text: 'Sass',
 		icon: <SiSass  className='tech-icon'/>,
+	},
+	{
+		id: 8,
+		text: 'Wordpress',
+		icon: <FaWordpress  className='tech-icon'/>,
 	},
 ]
 
