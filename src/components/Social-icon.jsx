@@ -15,7 +15,7 @@ const Socialicon = () => {
 		<a href="mailto: behharmohamed18@gmail.com" >
 			<MdEmail />
 		</a>
-		<div className="line"></div>
+		<div className="s-line"></div>
 	</div>
   )
 }

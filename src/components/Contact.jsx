@@ -18,18 +18,20 @@ const Contact = () => {
 
   return (
 	<div className='contact' id='contact'>
-    <div className="contact-center container">
+    <div className="contact-center container reveal">
       <section className="section-title">
           <h1>Get in touch!</h1>
           <div className="line"></div>
       </section>
       <div className="form-container">
       <form className='form' ref={form} onSubmit={sendEmail}>
-          <p>I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+          <h2>Interested in working together?</h2>
+          <p>Fill out the form below with some info about your project and i will get back to you as soon as I can.
+          Please allow a couple days for me to respond</p>
           <input type="text" id='name' name='name' placeholder='Name'  required/>
           <input type="text" id='subject' name='subject' placeholder='Subject'  required/>
           <input type="email" id='email' name='email' placeholder='Email'  required/>
-          <textarea id='message' rows='8' name='message' placeholder='How can i help you!'  required></textarea>
+          <textarea id='message' rows='8' name='message' placeholder='Tell me a little about your project!'  required></textarea>
             <button className="submit" type='submit'>Send</button>
       </form>
       </div>

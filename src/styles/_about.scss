@@ -68,6 +68,7 @@
 
 @media (max-width: 768px) {
 	.about{
+		height: unset;
 		.about-center {
 			.about-section{
 				flex-direction: column-reverse;

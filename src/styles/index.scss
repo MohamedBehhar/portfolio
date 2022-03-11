@@ -79,7 +79,7 @@ p, a {
 	}
 	.line{
 		width: 100px;
-		height: .5px;
+		height: 1px;
 		background-color: $Lightest-Slate;
 	}
 }
@@ -120,8 +120,11 @@ p, a {
 }
 
 @media (min-width: 768px) {
-	.footer-icons{
-		display: none;
+	.footer{
+		.footer-icons{
+			display: none;
+			background-color: red;
+		}
 	}
 }
 
@@ -129,11 +132,11 @@ p, a {
 	position: relative;
 	transform: translateX(10px);
 	opacity: 0;
-	transition: all ease-in-out 800ms;
+	transition: all ease-in-out 700ms;
 }
 
 .reveal.active{
-	transform: translateY(0px);
+	transform: translateX(0px);
 	opacity: 1;
 
 }
