@@ -123,20 +123,20 @@ p, a {
 	.footer{
 		.footer-icons{
 			display: none;
-			background-color: red;
 		}
 	}
 }
 
+// Scroll fade-in animation style 
 .reveal{
 	position: relative;
-	transform: translateX(10px);
+	transform: translateY(100px);
 	opacity: 0;
 	transition: all ease-in-out 700ms;
 }
 
 .reveal.active{
-	transform: translateX(0px);
+	transform: translateY(0px);
 	opacity: 1;
 
 }

@@ -12,6 +12,7 @@ const Home = () => {
 			<h1 className="name">Mohamed Behhar</h1>
 			<h1 className="title">I love turning design into Code</h1>
 			<p>I'm Mohamed, a self-taught front-end web developer based in Morocco, i really enjoy working with Html, Css and JavaScript to build websites. <br />Currently im studying computer sciences at <a className='school' href="https://1337.ma/en/"> 1337 school</a> and my aim is to become a MERN full stack developer.</p>
+			<p className='resume'><a href="/files/resume.pdf" target="_blank" rel="noreferrer">Resume</a></p>
 		</article>
 		</section>
 	</div>

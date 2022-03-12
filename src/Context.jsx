@@ -13,7 +13,7 @@ export const AppProvider = ({children}) => {
 		{
 			var windowHeight = window.innerHeight;
 			var revealTop = reveals[i].getBoundingClientRect().top;
-			var revealPoint = 200;
+			var revealPoint = 100;
 
 			if (revealTop < windowHeight - revealPoint)
 				reveals[i].classList.add('active');
@@ -24,7 +24,7 @@ export const AppProvider = ({children}) => {
 
 	const openSideBar = () => {
 		SetIsSidebarOpen(true);
-		console.log('open');
+
 	}
 	
 	const closeSideBar = () => {

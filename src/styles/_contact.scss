@@ -3,7 +3,40 @@
 	.form-container{
 		display: flex;
 		justify-content: center;
-		form{
+		position: relative;
+		.sent-notification{
+			background-color: $Green;
+			max-width: fit-content;
+			padding: .5rem;
+			border-radius: 5px;
+			color: $Navy;
+			position: absolute;
+			// top: 90%;
+			left: 50%;
+			transform: translateX(-50%);
+			display: none;
+		}
+		.show-sent-notification{
+			display: block;
+			animation-name: showNotification ;
+			animation-duration: 2100ms;
+		}
+		@keyframes showNotification {
+			0% {
+				top: 90%;
+				opacity: 0;
+			}
+			50% {
+				top: 80%;
+				opacity: 1;
+			}
+			100% {
+				top: 70%;
+				opacity: 0;
+				display: none;
+			}
+		}
+			form{
 			display: flex;
 			flex-direction: column;
 			width: 70%;
@@ -28,29 +61,30 @@
 				color: $Navy;
 			}
 
-			button{
+			.submit-btn{
 				background: transparent;
 				outline: none;
 				border: 1px solid $Green;
-				border-radius: 10px;
+				border-radius: 5px;
 				padding: .7rem;
 				cursor: pointer;
 				font-family: $Ftitilium;
 				font-size: 1rem;
-				transform: scale(1);
 				transition: transform 300ms ease-in-out;
 				width: 20%;
 				align-self: center;
 				position: relativ;
 				font
 				&:hover{
-					transform: scale(1.05);
+					background: #64ffdb10;
 				}
 			}
 			
 		}
 	}
 }
+
+
 
 @media (max-width: 768px) {
 	.contact{
