@@ -73,7 +73,7 @@ export const works = [
 		id: 1,
 		title: 'E-commerce product page',
 		description: 'A single product page made with React',
-		url: 'https://jovial-bassi-ddb0b4.netlify.app/',
+		url: 'https://ecomerce-product-page.netlify.app/',
 		github: 'https://github.com/MohamedBehhar/Product-Page',
 		img: 'images/productPage.png'
 	},
