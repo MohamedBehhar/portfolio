@@ -16,7 +16,7 @@ const Works = () => {
           const {id, title, description, url, img, github} = work;
           return(
             <div className="work" key={id}>
-              <a href={url} target="_blank">
+              <a href={url} target="_blank"  rel="noreferrer">
                 <div className="img-container">
                     <img src={img} alt="" />
                 </div>
