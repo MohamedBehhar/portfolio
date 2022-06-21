@@ -16,19 +16,21 @@ const Works = () => {
           const {id, title, description, url, img, github} = work;
           return(
             <div className="work" key={id}>
-              <div className="img-container">
-                <img src={img} alt="" />
-              </div>
-              <div className="work-text">
-                <h3>{title}</h3>
-                <p>{description}</p>
-                <a href={url} target="_blank" rel="noreferrer" >
-                  <FaExternalLinkSquareAlt className="link-icon"/>
-                </a>
-                <a href={github} target="_blank" rel="noreferrer" >
-                  <BsGithub className="link-icon"/>
-                </a>
-              </div>
+              <a href={url} target="_blank">
+                <div className="img-container">
+                    <img src={img} alt="" />
+                </div>
+                <div className="work-text">
+                  <h3>{title}</h3>
+                  <p>{description}</p>
+                  <a href={url} target="_blank" rel="noreferrer" >
+                    <FaExternalLinkSquareAlt className="link-icon"/>
+                  </a>
+                  <a href={github} target="_blank" rel="noreferrer" >
+                    <BsGithub className="link-icon"/>
+                  </a>
+                </div>
+              </a>
             </div>
           )
         })}
