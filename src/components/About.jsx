@@ -29,7 +29,7 @@ const About = () => {
         </div>
       </article>
         <div className="img-container">
-          <img src='images/personal.jpg' alt="portrait" className='personal' />
+          <img src='images/mohamedBehharDeveloper.jpg' alt="portrait" className='personal' />
         </div>
       </section>      
     </div>

@@ -12,8 +12,10 @@
 	z-index: 99;
 	a{
 		font-size: 1.2rem;
+		scale: 1;
+		transition: scale 200ms ease-in-out;
 		&:hover{
-			color: $Green;
+			scale: 1.2;
 		}
 	}
 	.s-line{

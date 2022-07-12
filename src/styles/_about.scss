@@ -1,17 +1,17 @@
 .about{
-	// padding: 3rem 0;
-	height: 100vh;
+	padding: 3rem 0;
+	// height: 50vh;
 	display: flex;
 	align-items: center;
 	color: $White;
 	margin-bottom: 4rem;
 	.about-center {
-		padding-top: 2rem;
+		padding-top: 0rem;
 		.about-section{
 			display: flex;
 			.description{
 				flex-basis:  75%;
-				// padding-top:  2rem ;
+				padding-top:  2rem ;
 				padding-right: 2rem;
 				p{
 					margin-bottom: .5rem;
@@ -44,6 +44,7 @@
 			}
 			.img-container{
 				flex-basis:  25%;
+				padding-top: 2rem;
 				.personal{
 					max-width: 100%;
 					border: 1px solid $Green;
