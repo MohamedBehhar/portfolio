@@ -3,9 +3,11 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 		gap: 3rem;
+		justify-content: center;
 		padding-bottom: 4rem;
 		justify-items: center;
 		.work{
+			
 			position: relative;
 			overflow: hidden;
 			border-radius: 15px;

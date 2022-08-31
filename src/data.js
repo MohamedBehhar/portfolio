@@ -70,6 +70,14 @@ export const technologies = [
 
 export const works = [
 	{
+		id: 0,
+		title: 'Territoire Vert landing page',
+		description: 'A lading page with contact form at the bottom',
+		url: 'https://territoire-vert.netlify.app/',
+		github: 'https://github.com/MohamedBehhar',
+		img: 'images/territoireVert.png'
+	},
+	{
 		id: 1,
 		title: 'E-commerce product page',
 		description: 'A single product page made with React',
