@@ -71,9 +71,9 @@ export const technologies = [
 export const works = [
 	{
 		id: 0,
-		title: 'Territoire Vert landing page',
-		description: 'A lading page with contact form at the bottom',
-		url: 'https://territoire-vert.netlify.app/',
+		title: 'Territoire Vert',
+		description: 'A website for a client',
+		url: 'https://territoirevert.com/',
 		github: 'https://github.com/MohamedBehhar',
 		img: 'images/territoireVert.png'
 	},
