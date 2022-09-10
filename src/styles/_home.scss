@@ -5,16 +5,14 @@
 	margin-bottom: 2rem;
 	margin-top: 2rem;
 	.img-container{
-		flex-basis: 30%;
-		position: relative;
+		flex-basis: 40%;
 		.home-picture{
 			padding: .5rem;
 			max-width: 100%;
-			border: 1px solid $Green;
 		}
 	}
 	.description{
-		flex-basis: 70%;
+		flex-basis: 60%;
 		padding: 0 2rem;
 		.greeting{
 			color: $Green;
@@ -60,8 +58,9 @@
 		.img-container{
 			padding-top: 2rem;
 			margin-bottom: $Small-margin;
+			width: 350px;
 			.home-picture{
-				max-width: 40%;
+				max-width: 100%;
 			}
 		}
 		.description{
@@ -86,7 +85,7 @@
 	.home-center{
 		.img-container{
 			.home-picture{
-				max-width: 60%;
+				// max-width: 60%;
 			}
 		}
 	}
